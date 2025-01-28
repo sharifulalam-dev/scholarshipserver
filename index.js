@@ -52,6 +52,8 @@ const verifyToken = (req, res, next) => {
 };
 
 async function run() {
+  await client.connect();
+
   try {
     const db = client.db("scholarship-portal");
     const usersCollection = db.collection("users");
