@@ -16,8 +16,6 @@ const corsOptions = {
     "https://test-982fe.web.app",
     "https://test-982fe.firebaseapp.com",
   ],
-  credentials: true,
-  optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
 
